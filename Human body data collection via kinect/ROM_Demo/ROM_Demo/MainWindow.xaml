@@ -1,0 +1,41 @@
+﻿<Window x:Class="ROM_Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ROM Demo" Height="830" Width="1540" WindowStartupLocation="CenterScreen" Loaded="MainWindow_Loaded" Closing="MainWindow_Closing" Background="#FF838383">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="847*"/>
+            <ColumnDefinition Width="586*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="ColorStreamImage" Grid.ColumnSpan="3" Margin="0,1,0,-0.2"/>
+        <Image x:Name="SkeletonStreamImage" Grid.ColumnSpan="3" Margin="0,0,-0.4,-0.2"/>
+
+
+        <TextBlock Text="TEST" Margin="94.6,12,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="36" Foreground="White" Grid.Column="1" Height="46" Width="82"/>
+        <Line X1="0" Y1="0" X2="300" Y2="0" Stroke="White" StrokeThickness="3" Width="300" Height="3" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="75.6,63,0,0" Grid.Column="1"/>
+        <TextBlock Text="RANGE OF MOTION" Margin="75.6,71,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Bold" Grid.Column="1" Height="30" Width="242"/>
+        <TextBlock Margin="39.8,140,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Foreground="Beige" Height="46" Width="260" Grid.Column="2"><Run Text="R"/><Run Language="zh-cn" Text="-"/><Run Text="ELBO"/><Run Language="zh-cn" Text="W"/></TextBlock>
+        <TextBlock Margin="9.8,225,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Foreground="Beige" Height="49" Width="305" Grid.Column="2"><Run Text="R"/><Run Text="-"/><Run Text="SHOULDER"/><Run Text="-R"/></TextBlock>
+        <TextBlock Margin="39.8,318,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Foreground="Beige" Height="42" Width="203" Grid.Column="2"><Run Text="L"/><Run Language="zh-cn" Text="-"/><Run Text="ELBOW"/></TextBlock>
+        <TextBlock Margin="887.8,409,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Foreground="Beige" Height="50" Width="315" Grid.Column="1" Grid.ColumnSpan="2"><Run Text="L"/><Run Text="-"/><Run Text="SHOULDER"/><Run Text="-R"/></TextBlock>
+        <TextBlock Margin="39.8,502,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Foreground="Beige" Height="50" Width="165" Grid.Column="2"><Run Text="R"/><Run Language="zh-cn" Text="-"/><Run Text="KNEE"/></TextBlock>
+        <TextBlock Margin="39.8,593,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Foreground="Beige" Height="50" Width="165" Grid.Column="2"><Run Text="L"/><Run Language="zh-cn" Text="-"/><Run Text="KNEE"/></TextBlock>
+        <TextBlock Margin="23.8,678,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Foreground="Red" Height="50" Width="258" Grid.Column="2" RenderTransformOrigin="0.278,0.684"><Run Text="R-HIP"/><Run Text="-"/><Run Text="ROLL"/><Run Language="zh-cn" Text="-"/></TextBlock>
+        <TextBlock Margin="23.8,741,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40" Foreground="Red" Height="50" Width="258" Grid.Column="2"><Run Text="L"/><Run Text="-"/><Run Text="HIP"/><Run Text="-ROLL"/><Run Language="zh-cn" Text="+"/></TextBlock>
+
+        <TextBlock Text="READING" Margin="0,12,133,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="36" Foreground="White" Grid.Column="2" Height="46" Width="162"/>
+        <Line X1="0" Y1="0" X2="300" Y2="0" Stroke="White" StrokeThickness="3" Width="300" Height="3" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,63,133,0" Grid.Column="2"/>
+
+        <TextBlock x:Name="result1" Text="100°" Margin="0,108,96,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="72" Foreground="GreenYellow" FontWeight="Bold" Grid.Column="2" Height="90" Width="162"/>
+        <TextBlock x:Name="result2" Text="100°" Margin="0,193,96,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="72" Foreground="GreenYellow" FontWeight="Bold" Grid.Column="2" Height="92" Width="162" RenderTransformOrigin="0.052,0.435"/>
+        <TextBlock x:Name="result3" Text="100°" Margin="0,285,96,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="72" Foreground="GreenYellow" FontWeight="Bold" Grid.Column="2" Height="92" Width="162" RenderTransformOrigin="0.215,0.478"/>
+        <TextBlock x:Name="result4" Text="100°" Margin="0,377,96,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="72" Foreground="GreenYellow" FontWeight="Bold" Grid.Column="2" Height="92" Width="162"/>
+        <TextBlock x:Name="result5" Text="100°" Margin="0,469,96,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="72" Foreground="GreenYellow" FontWeight="Bold" Grid.Column="2" Height="92" Width="162"/>
+        <TextBlock x:Name="result6" Text="100°" Margin="0,561,96,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="72" Foreground="GreenYellow" FontWeight="Bold" Grid.Column="2" Height="92" Width="162"/>
+        <TextBlock x:Name="result7" Text="100°" Margin="0,645,96,0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="72" Foreground="Red" FontWeight="Bold" Grid.Column="2" Height="91" Width="162"/>
+        <TextBlock x:Name="result8" Text="100°" Margin="0,718,96,-7.2" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="72" Foreground="Red" FontWeight="Bold" Grid.Column="2" Height="90" Width="162"/>
+
+    </Grid>
+</Window>
+
